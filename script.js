@@ -1,5 +1,6 @@
 // js libraries
-// const simpleParallax = require('simple-parallax-js');
+// parallax library
+var rellax = new Rellax('.rellax');
 
 
 // TRANSITION ANIMATION
