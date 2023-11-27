@@ -1,6 +1,7 @@
 // js libraries
 // parallax library
 var rellax = new Rellax('.rellax');
+gsap.registerPlugin(ScrollTrigger);
 
 
 // TRANSITION ANIMATION
@@ -12,6 +13,11 @@ let mexico = document.querySelector(".landing-page p");
 let visitSection = document.querySelector(".visit");
 // let dot = document.querySelector(".open::before");
 let purposeSection = document.querySelector(".purpose");
+let purposeText = document.querySelector(".purpose-text");
+let infoSection = document.querySelector(".information");
+let footer = document.querySelector("footer");
+
+
 
 
 addEventListener("load", () => {
@@ -40,9 +46,19 @@ button.addEventListener("click", ()  => {
     // purpose section
     gsap.to(purposeSection, { opacity:1, display:'block', delay:1.5, duration: 0.9, ease: "power1.out"});
 
+    // info section
+    gsap.to(infoSection, { opacity:1, display:'block', delay:1.5, duration: 0.9, ease: "power1.out"});
+
+    // footer 
+    gsap.to(footer, { opacity:1, display:'block', delay:1.5, duration: 0.9, ease: "power1.out"});
+
 });
 
-// LANDING PAGE TEXT ANIMATION
+// Info/purpose section text fade ins
+
+gsap.fromTo(purposeText, { opacity: 0 }, { opacity: 1, scrollTrigger: { trigger: purposeText, start: "top 80%", end: "bottom 50%", scrub: true } });
+
+
 
 
 

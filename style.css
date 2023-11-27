@@ -160,6 +160,11 @@ a {
   display: none;
   position: relative;
 }
+
+.purpose-text {
+  opacity: 0;
+}
+
 .purpose h3 {
   margin-top: 0;
   font-size: 40px;
@@ -167,6 +172,7 @@ a {
 
 .purpose p {
   font-size: 20px;
+  z-index: 2;
 }
 
 .purpose > div {
@@ -196,8 +202,8 @@ a {
   height: 250px;
   width: 180px;
   rotate: 10deg;
-  left: -200px;
-  top: 150px;
+  left: -400px;
+  top: 20px;
 }
 
 .butterfly2 {
@@ -213,35 +219,73 @@ a {
   position: absolute;
   height: 350px;
   width: 300px;
-  rotate: -40deg;
-  left: 550px;
-  top: 80px;
+  rotate: -60deg;
+  left: 700px;
+    top: -148px;
 }
 
 .leaf2 {
   position: absolute;
   height: 350px;
   width: 300px;
-  rotate: -45deg;
-  left: -250px;
-  top: -600px;
+  rotate: 300deg;
+  left: -220px;
+  top: -650px;
 }
 .leaf3 {
   position: absolute;
   height: 350px;
   width: 300px;
   rotate: -50deg;
-  left: -200px;
+  left: -150px;
   top: -100px;
+  z-index: -1;
 }
 .leaf5 {
   position: absolute;
   height: 350px;
   width: 300px;
   rotate: -50deg;
-  left: 550px;
+  left: 250px;
   top: -100px;
 }
+
+.leaf6 {
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  rotate: 100deg;
+  left: 300px;
+  top: -600px;
+}
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////// */
+/* Information */
+
+
+.information {
+  opacity: 0;
+  display: none;
+  height: 1200px;
+  width: 100vw;
+  background-color: snow;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+  top:400px;
+}
+
 /* /////
 /////////////////////////////////////////////////////////////// */
 /* FOOTER */
@@ -254,4 +298,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  display: none;
 }
+
