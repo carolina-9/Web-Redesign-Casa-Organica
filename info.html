@@ -3,19 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit Casa Orgánica</title>
+    <title>Visit Casa Orgánica - Learn More</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
+    <section class="history">
+      <h2>Casa Orgánica's Journey</h2>
+      <p>Casa Orgánica is a special home that was built to feel like a natural part of the earth, cozy like a cave. It started small with just one room and grew bigger as the family needed more space. Made with a strong, bendy material, the house keeps a comfy temperature inside all year long. It has a garden on the roof that makes it blend in with the land around it, showing how a home can live in harmony with nature. </p>
+      <video src="https://video.wixstatic.com/video/d019ba_48af5bbdf2b54bb4bcd6849d554e9006/480p/mp4/file.mp4" controls></video>
+    </section>
+   
+    <section class="creator">
+      <h2>Javier Senosiain</h2>
+      <p>
+        Javier Senosiain is a renowned Mexican architect known for his unique approach to organic architecture. He is the creative mind behind "Casa Orgánica," a residence that resembles a giant, whimsical seashell, seamlessly integrating elements of nature into its design. Senosiain's work is characterized by its fluid forms and harmonious integration with the environment, showcasing a profound respect for natural landscapes. His architectural philosophy emphasizes functionality, beauty, and sustainability, making his designs both innovative and environmentally conscious.
+      </p>
+      
 
+    </section>
 
-  <p>test</p>
+    <section class="gallery">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container">
+              <img src="attributes/arque1.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container">
+              <img src="attributes/arque1.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">Plain slide with text</div>
+          <div class="swiper-slide">
+            <!-- Override maxRatio parameter -->
+            <div class="swiper-zoom-container" data-swiper-zoom="5">
+              <img src="attributes/arque1.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
+    
+    <footer id="info-footer">
       <p>© 2020 Casa Orgánica</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
