@@ -18,6 +18,10 @@ let purposeText = document.querySelector(".purpose-text");
 let infoSection = document.querySelector(".information");
 let infoheader = document.querySelector(".information h4");
 let footer = document.querySelector("footer");
+let goldHand = document.querySelector(".gold-hand");
+let icon = document.querySelector(".map-icon");
+
+let link = document.querySelector("nav a");
 
 
 
@@ -35,7 +39,7 @@ button.addEventListener("click", ()  => {
 
     // text
     gsap.to(header, { opacity:0, duration: 0.3, ease: "power1.out"});
-    gsap.to(mexico, { opacity:0, duration: 0.4, ease: "power1.out"});
+    gsap.to(mexico, { opacity:0, duration: 0.4, display: "hidden", ease: "power1.out"});
     gsap.to(button, { opacity:0, duration: 0.5, ease: "power1.out"});
 
     // squares
@@ -45,6 +49,8 @@ button.addEventListener("click", ()  => {
 
     // visit section
     gsap.fromTo(visitSection, { opacity:0, zIndex:5 }, { opacity:1, delay:1.5, duration: 0.9, ease: "power1.out"});
+    gsap.fromTo(goldHand, { opacity:0, zIndex:5 }, { opacity:1, delay:1.5, duration: 0.9, ease: "power1.out"});
+    gsap.fromTo(icon, { opacity:0, zIndex:5 }, { opacity:1, delay:1.5, duration: 0.9, ease: "power1.out"});
     // gsap.to(dot, { boxShadow: "0 0 10px 5px #f00",repeat:-1, yoyo:true, duration: 0.5, ease: "power1.out"});
 
     // purpose section
@@ -82,28 +88,26 @@ gsap.to(dot, {opacity: 0.9,repeat: -1, display:'block', yoyo: true,ease: "power1
 
 
 
+// Gallery section ~ didt work / try this laer
 
-
-// Gallery section ~ library
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'vertical',
+//     loop: true,
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+//     // If we need pagination
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+//     // And if we need scrollbar
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
+//   });
