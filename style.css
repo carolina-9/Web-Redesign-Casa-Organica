@@ -140,14 +140,14 @@ button:hover {
 /* VISIT US PAGE */
 
 .dot {
+  z-index: -1;
+  display:none;
   width:17px;
   height: 17px;
   border-radius: 50%;
   background-color: var(--lightergreen);
   position: absolute;
-  display:hidden;
   opacity:0;
-  display: flex;
   justify-self: flex-start;
   align-self: center;
   top:230px;
@@ -159,9 +159,9 @@ button:hover {
   width:300px;
   position: relative;
   top:208px;
-  left:-80px;
+  left:-175px;
   font-size:20px;
-  display:hidden;
+  display:none;
   opacity:0;
 }
 
@@ -189,6 +189,16 @@ button:hover {
 }
 
 
+
+#schedule {
+  position: relative;
+  left:-10px;
+  text-align: center;
+  font-size:24px;
+  top:50px;
+ 
+}
+
 /* NAV */
 
 
@@ -199,7 +209,7 @@ justify-content: flex-end;
 align-items: flex-start;   
 height: 200px;
 right: 100px;
-top:10px;
+top:30px;
 }
 
 nav ul {
@@ -544,6 +554,7 @@ a:hover {
 
 .history h2 {
 font-size: 40px;
+/* opacity: 0;  */
 
 
 }
@@ -553,6 +564,7 @@ font-size: 40px;
   width: 950px;
   text-align: center;
   margin-bottom:50px;
+  /* opacity: 0; */
 
 }
 
@@ -588,12 +600,12 @@ video {
   grid-column: 1/3;
 }
 .creator p {
-  font-size: 15px;
+  font-size: 23px;
   color:snow;
   position: relative;
   top: 100px;
   left:100px;
-  width:600px;
+  width:800px;
   grid-row: 1;
   grid-column: 1/3;
 }
@@ -635,7 +647,7 @@ video {
 /* FOOTER */
 
 footer {
-  height: 100px;
+  height: 120px;
   width: 100vw;
   background-color: black;
   color: white;
@@ -647,9 +659,9 @@ footer {
 }
 
 footer p {
- margin-top:20px;
+ margin-top:0px;
  position: relative;
- top:40px;
+ top:50px;
  text-align: center;
 
 }

@@ -20,6 +20,8 @@ let infoheader = document.querySelector(".information h4");
 let footer = document.querySelector("footer");
 let goldHand = document.querySelector(".gold-hand");
 let icon = document.querySelector(".map-icon");
+let historyTextH = document.querySelector(".history h2");
+let historyTextP = document.querySelector(".history p");
 
 let link = document.querySelector("nav a");
 
@@ -63,7 +65,7 @@ button.addEventListener("click", ()  => {
     gsap.to(footer, { opacity:1, display:'block', delay:1.5, duration: 0.9, ease: "power1.out"});
 
     // dot 
-    gsap.to(dot, { opacity:1, display:'block',zIndex: 20, delay:0.9, duration: 0.9, ease: "power1.out"});
+    gsap.to(dot, { opacity:1, display:'flex',zIndex: 20, delay:0.9, duration: 0.9, ease: "power1.out"});
     gsap.to(dotText, { opacity:1, display:'block',zIndex: 20, delay:0.9, duration: 0.9, ease: "power1.out"});
 
     
@@ -78,6 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
    
     gsap.to(infoheader, { opacity: 1, scrollTrigger: { trigger: infoheader, start: "top 80%", end: "bottom 50%", scrub: true } });
    });
+
+//    gsap.fromTo(historyTextH, { opacity:0, zIndex:5 }, { opacity:1, delay:0.4, duration: 0.9, ease: "power1.out"});
+//    gsap.fromTo(historyTextP, { opacity:0, zIndex:5 }, { opacity:1, delay:0.4, duration: 0.9, ease: "power1.out"});
    
 
    
